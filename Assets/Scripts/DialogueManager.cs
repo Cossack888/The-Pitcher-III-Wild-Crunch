@@ -62,7 +62,7 @@ public class DialogueManager : MonoBehaviour
         variables.VariablesToStory(story); // Load global variables into the current story
         refreshUI();
         variables.StartListening(story);
-        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
     }
     public void ExitStory()
     {
@@ -70,7 +70,7 @@ public class DialogueManager : MonoBehaviour
         variables.StopListening(story);
         CurrentText = "";
         eraseUI();
-        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
 
