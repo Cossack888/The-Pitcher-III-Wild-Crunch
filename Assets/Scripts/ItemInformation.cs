@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ItemInformation : MonoBehaviour
 {
-
-    public int amount;
-    public float value;
     public Sprite sprite;
     public Sprite defaultSprite;
     public Item item;
