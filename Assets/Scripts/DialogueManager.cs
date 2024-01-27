@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject ConvoCanvas;
     [Header("load globals json")]
     [SerializeField] public TextAsset loadGlobalsJson;
-
+    public ItemType[] itemType;
     public string CurrentText;
 
 
@@ -53,7 +53,13 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("starting new story");
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.C)) // Press 'C' to check global variables
+        {
+            CheckGlobalVariableStatus();
+        }
     }
+
 
     public void EnterStory(TextAsset inkJson)
     {
@@ -73,7 +79,22 @@ public class DialogueManager : MonoBehaviour
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
+    public void CheckGlobalVariableStatus()
+    {
+        foreach (var variable in variables.variables)
+        {
+            Debug.Log($"Global Variable: {variable.Key}, Value: {variable.Value}");
 
+            foreach (ItemType item in itemType)
+            {
+                if (variable.Key == item.itemName && variable.Value == true)
+                {
+                    InventoryManager.Instance.InstantiateItemInSlot(item.sprite, item.itemName);
+                }
+            }
+
+        }
+    }
 
     void refreshUI()
     {
