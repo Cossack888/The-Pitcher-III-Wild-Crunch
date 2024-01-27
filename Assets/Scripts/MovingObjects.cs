@@ -43,7 +43,6 @@ public class MovingObjects : MonoBehaviour
         info = information;
         Img.sprite = info.sprite;
         newItem = info.item;
-        ItemAmount = info.amount;
     }
     public Sprite RetrieveSprite()
     {

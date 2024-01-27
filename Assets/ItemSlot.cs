@@ -9,6 +9,10 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public Sprite sprite;
     public Image image;
 
+    private void Start()
+    {
+        image = GetComponent<Image>();
+    }
     public void OnDrag(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
@@ -16,11 +20,20 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        if (CurrentItem != null)
+        {
+            PickUpItem();
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
     }
+    void PickUpItem()
+    {
+        MovingObjects.Instance.SetItemSlot(this);
+
+    }
+
 }
