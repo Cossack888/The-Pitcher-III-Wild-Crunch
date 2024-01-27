@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2980527953d1e54e8f4abe6734e0088, type: 3}
-  m_Name: New Dialogue
+  m_Name: dialog_HuhubertWriter
   m_EditorClassIdentifier: 
-  ID: Convo1
-  dialog: {fileID: 4900000, guid: 912391d824c2ceb46aac24f9cbef0d25, type: 3}
+  ID: 1
+  dialog: {fileID: 4900000, guid: b983fbd5e4dcd4ed7a1ca7da8962b023, type: 3}

@@ -33,9 +33,9 @@ Ooooch! Katusze okrutne nawiedzają mą duszę. Pisze albo nie piszę. Nie pisz�
 
 ===HelpHuhubert===
 Utknąłem na tym fragmencie (wskazuje maszynopis na antycznej maszynie do pisania) - otóż protagonista doświadcza symbolicznego ojcobójstwa swojego pieseł-figure tym samym zyskując dojrzałość. Ale jak mogę pokazać, że jest w huhu dojrzały?
-*Musi być ciemnożółty i z plamami. Jak banan. --> InspiredHuhubert
-*Dodaj mu wąs. I dwa miecze - jeden na koty, drugi na listonoszy. --> InspiredHuhubert
-*Wpadka! Dziecko, kredyt, psujący się samochód, pchły i sucha karma. --> InspiredHuhubert
+*[Musi być ciemnożółty i z plamami. Jak banan]. --> InspiredHuhubert
+*[Dodaj mu wąs. I dwa miecze - jeden na koty, drugi na listonoszy.] --> InspiredHuhubert
+*[Wpadka! Dziecko, kredyt, psujący się samochód, pchły i sucha karma]. --> InspiredHuhubert
 *[A gdyby tak nagle zaatakowały clowny z kosmosu?] --> GetDLC
 
 ===GetDLC===
