@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: programista
   m_EditorClassIdentifier: 
   ID: 0
+<<<<<<< Updated upstream
   dialog: {fileID: 4900000, guid: 54c502c9f8c394c168c9cf9f665c7cf1, type: 3}
+=======
+  dialog: {fileID: 4900000, guid: 5e12d8200b3f5ee4a8695d2b1ea9ddb7, type: 3}
+>>>>>>> Stashed changes

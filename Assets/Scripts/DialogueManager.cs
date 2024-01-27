@@ -22,8 +22,10 @@ public class DialogueManager : MonoBehaviour
     public ItemType[] itemType;
     public string CurrentText;
 
-    private void Awake() {
+    private void Awake()
+    {
         DontDestroyOnLoad(this.gameObject);
+
     }
 
 
@@ -70,7 +72,8 @@ public class DialogueManager : MonoBehaviour
         variables.VariablesToStory(story); // Load global variables into the current story
         refreshUI();
         variables.StartListening(story);
-        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        if (player != null)
+            player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
     }
     public void ExitStory()
     {
@@ -78,7 +81,8 @@ public class DialogueManager : MonoBehaviour
         variables.StopListening(story);
         CurrentText = "";
         eraseUI();
-        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        if (player != null)
+            player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void CheckGlobalVariableStatus()
@@ -91,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             {
                 if (variable.Key == item.itemName && variable.Value == true)
                 {
-                    InventoryManager.Instance.InstantiateItemInSlot(item.sprite, item.itemName);
+                    InventoryManager.Instance.InstantiateItemInSlot(item.sprite, item.itemName, item);
                 }
             }
 

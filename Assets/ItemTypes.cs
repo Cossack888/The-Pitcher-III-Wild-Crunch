@@ -6,4 +6,16 @@ public class ItemType : ScriptableObject
 {
     public Sprite sprite;
     public string itemName;
+    public int SlotId;
+
+    public Class typeofItem;
+    public enum Class
+    {
+        animals,
+        gamedev,
+        food,
+        items
+    }
+
+
 }

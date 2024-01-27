@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
         }
         Instance = this;
     }
-    public void InstantiateItemInSlot(Sprite sprite, string itemName)
+    public void InstantiateItemInSlot(Sprite sprite, string itemName, ItemType item)
     {
         // Instantiate a new InventorySlot
         GameObject newSlot = Instantiate(inventorySlotPrefab, Vector3.zero, Quaternion.identity);
@@ -36,7 +36,7 @@ public class InventoryManager : MonoBehaviour
         InventoryItem itemScript = newItem.GetComponent<InventoryItem>();
         if (itemScript != null)
         {
-            itemScript.SetItemInfo(sprite, itemName);
+            itemScript.SetItemInfo(sprite, itemName, item);
         }
 
         // Set the instantiated item as a child of the inventory slot
@@ -54,12 +54,6 @@ public class InventoryManager : MonoBehaviour
         // slot.ResetPosition();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            InstantiateItemInSlot(sprite, nameOfItem);
-        }
-    }
+
 
 }
