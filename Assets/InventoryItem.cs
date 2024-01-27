@@ -68,11 +68,10 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             rectTransform.anchoredPosition = originalPosition;
         }
     }
-    public void SetItemInfo(Sprite sprite, string itemName, ItemType itemType)
+    public void SetItemInfo(ItemType itemType)
     {
-        this.sprite = sprite;
-        text.text = itemName;
-        img.sprite = sprite;
+        text.text = itemType.itemName;
+        img.sprite = itemType.sprite;
         type = itemType;
     }
 }

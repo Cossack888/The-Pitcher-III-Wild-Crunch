@@ -95,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             {
                 if (variable.Key == item.itemName && variable.Value == true)
                 {
-                    InventoryManager.Instance.InstantiateItemInSlot(item.sprite, item.itemName, item);
+                    InventoryManager.Instance.InstantiateItemInSlot(item);
                 }
             }
 
