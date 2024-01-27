@@ -7,6 +7,8 @@ public class BossManager : MonoBehaviour
 {
     [SerializeField] Image image;
     public float laughterMeter = 50;
+    public GameObject[] Canvas;
+    public int canva = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,21 @@ public class BossManager : MonoBehaviour
     public void ChangeMeter(float amount)
     {
         laughterMeter += amount;
+    }
+
+    public void NextCanvas()
+    {
+        if (canva < Canvas.Length - 1)
+        {
+            canva++;
+            foreach (var canvas in Canvas)
+            {
+                canvas.SetActive(false);
+            }
+            Canvas[canva].SetActive(true);
+
+        }
+
     }
 
 }
