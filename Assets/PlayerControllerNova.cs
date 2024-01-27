@@ -11,6 +11,7 @@ public class PlayerControllerNova : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float speed;
     UnityArmatureComponent armature;
+    public GameObject[] faces;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +27,39 @@ public class PlayerControllerNova : MonoBehaviour
 
         direction = new Vector3(moveHorizontal, moveVertical, 0);
         direction = transform.TransformDirection(direction);
-        if (direction != Vector3.zero && !armature.animation.isPlaying)
+        if (direction.x > 0)
         {
-            armature.animation.Play("animtion0");
+            foreach (GameObject gameObject in faces)
+            {
+                gameObject.SetActive(false);
+            }
+            faces[2].SetActive(true);
         }
-        else if (direction == Vector3.zero)
+        if (direction.x < 0)
         {
-            armature.animation.Stop();
+            foreach (GameObject gameObject in faces)
+            {
+                gameObject.SetActive(false);
+            }
+            faces[1].SetActive(true);
         }
-        // armature.sortingOrder = (int)Mathf.Floor(-transform.position.y);
+        if (direction == Vector3.zero && !faces[0].activeSelf)
+        {
+            foreach (GameObject gameObject in faces)
+            {
+                gameObject.SetActive(false);
+            }
+            faces[0].SetActive(true);
+        }
+
+        if (direction.y > 0)
+        {
+            foreach (GameObject gameObject in faces)
+            {
+                gameObject.SetActive(false);
+            }
+            faces[3].SetActive(true);
+        }
 
 
     }
