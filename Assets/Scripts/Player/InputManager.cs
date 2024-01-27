@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    Movement movement;
+    //[SerializeField] Movement movement;
 
     [SerializeField] PointAndClick pointAndClick;
 
@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour
 
     public void Awake()
     {
-        movement = GetComponent<Movement>();
+        //movement = GetComponent<Movement>();
 
         controls = new PlayerControls();
         groundMovement = controls.GroundMovement;
@@ -37,7 +37,7 @@ public class InputManager : MonoBehaviour
         mousePosition = mouseActions.Position.ReadValue<Vector2>();
 
         pointAndClick.ReceivePosition(mousePosition);
-        movement.ReceiveInput(horizontalInput);
+        //movement.ReceiveInput(horizontalInput);
         //Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
         //characterController.Move(horizontalVelocity * Time.deltaTime);
     }

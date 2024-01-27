@@ -13,27 +13,24 @@ public class PointAndClick : MonoBehaviour
 
     public void OnMouseClick()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+
+        /*  Jakby znowu miało być point and click
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if(hit.collider != null)
         {
-            PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
-            pointerEventData.position = mousePosition;
-            var raycastResults = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(pointerEventData, raycastResults);
-            foreach (var result in raycastResults)
-            {
-                Debug.Log("UI Element Clicked: " + result.gameObject.name);
-            }
+            Debug.Log(hit.collider.name);
+            ChangeScene(hit.collider);
         }
-        else
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(mousePosition), out hit, Mathf.Infinity))
-            {
-                Debug.Log("3D Object Clicked: " + hit.collider.name);
-            }
-        }
+        */
+        
     }
 
-
+    void ChangeScene(Collider2D col)
+    {
+        SceneSwitch sceneSwitch;
+        col.TryGetComponent<SceneSwitch>(out sceneSwitch);
+        if(sceneSwitch != null)
+            sceneSwitch.ChangeScene();
+    }
 
 }
