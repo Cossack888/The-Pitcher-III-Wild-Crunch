@@ -22,7 +22,9 @@ public class DialogueManager : MonoBehaviour
     public ItemType[] itemType;
     public string CurrentText;
 
-
+    private void Awake() {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
 
     public Dictionary<string, TextAsset> dialogueChanger = new Dictionary<string, TextAsset>();
