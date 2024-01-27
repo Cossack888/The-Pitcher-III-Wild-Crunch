@@ -18,8 +18,6 @@ public class ItemInformation : MonoBehaviour
     }
     public void ClearInformation()
     {
-        amount = 0;
-        value = 0;
         sprite = defaultSprite;
         item = null;
     }

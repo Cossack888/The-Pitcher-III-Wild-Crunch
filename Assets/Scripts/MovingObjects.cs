@@ -67,4 +67,8 @@ public class MovingObjects : MonoBehaviour
     {
         ItemAmount -= amount;
     }
+    public void ResetItemSlot()
+    {
+        Slot = null;
+    }
 }
