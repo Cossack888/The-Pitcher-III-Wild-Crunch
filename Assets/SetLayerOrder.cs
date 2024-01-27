@@ -7,11 +7,15 @@ public class SetLayerOrder : MonoBehaviour
 {
 
     [SerializeField] int layerOrder;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<UnityArmatureComponent>().sortingOrder = layerOrder;
+            for (int i = 0; i < collision.transform.childCount; i++)
+            {
+                collision.transform.GetChild(i).gameObject.GetComponent<UnityArmatureComponent>().sortingOrder = layerOrder;
+            }
+
         }
     }
 }
