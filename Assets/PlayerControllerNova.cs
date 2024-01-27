@@ -34,7 +34,7 @@ public class PlayerControllerNova : MonoBehaviour
         {
             armature.animation.Stop();
         }
-        armature.sortingOrder = (int)Mathf.Floor(-transform.position.y);
+        // armature.sortingOrder = (int)Mathf.Floor(-transform.position.y);
 
 
     }
