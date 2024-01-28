@@ -1,7 +1,7 @@
 INCLUDE Globals.ink
 Co za syf! Znowu nabazgrane. Ile można?!
 {kocimietka: Niuch, niuch. Czy ja żem czuję kocimiętkę. Chuchnij no Woofciech!}
-*{kocimietka}[Być może, zależy co z tego będę miał] --> KocimietkaKocimierz
++ {kocimietka} [Być może, zależy co z tego będę miał] --> KocimietkaKocimierz
 *[Nie wytrzymam Panie Kocimierzu, może Pan mi pomoże?] --> NieWiemCzyWiesz
 
 ===KocimietkaKocimierz===
