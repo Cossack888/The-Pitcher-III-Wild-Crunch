@@ -10117,7 +10117,7 @@ MonoBehaviour:
   - {fileID: 2053665231}
   - {fileID: 1091993552}
   canva: 0
-  clipHappy: {fileID: 8300000, guid: b1c93ba1e5ca1b648883827a859c3b90, type: 3}
+  clipHappy: {fileID: 8300000, guid: 61e86724dc15fe14f99e7708189fc6e9, type: 3}
   clipSad: {fileID: 8300000, guid: e554eb3ba5614af4f89447cdf5b4d5b7, type: 3}
   clipEnd: {fileID: 8300000, guid: eefc80a0fe3c21b4c9d227cf528a1c68, type: 3}
   clipnormal: {fileID: 8300000, guid: d86f4e15d7385674e9c032565235ad3a, type: 3}

@@ -53,11 +53,6 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("starting new story");
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.C)) // Press 'C' to check global variables
-        {
-            CheckGlobalVariableStatus();
-        }
     }
     public void EnterStory(TextAsset inkJson)
     {

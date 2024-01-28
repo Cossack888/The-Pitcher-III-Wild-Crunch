@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BossManager : MonoBehaviour
@@ -61,6 +62,14 @@ public class BossManager : MonoBehaviour
             }
             Canvas[canva].SetActive(true);
 
+        }
+        else
+        {
+            if (laughterMeter >= 100) { SceneManager.LoadScene(7); }
+            else
+            {
+                SceneManager.LoadScene(8);
+            }
         }
 
     }

@@ -34,7 +34,7 @@ public class InventoryManager : MonoBehaviour
 
     public void nextInvGroup()
     {
-        if (invGroup < invGroups.Length)
+        if (invGroup < invGroups.Length - 1)
         {
             invGroup++;
             foreach (GameObject inv in invGroups)
@@ -93,12 +93,8 @@ public class InventoryManager : MonoBehaviour
             itemScript.SetItemInfo(item);
             slots.Add(itemScript);
         }
-
-
         // Set the instantiated item as a child of the inventory slot
         newItem.transform.SetParent(newSlot.transform, false);
-
-
     }
 
     private void Update()

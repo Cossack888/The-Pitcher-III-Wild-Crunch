@@ -1,15 +1,18 @@
 using Ink.Parsed;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
+    DialogueManager manager;
     public List<ItemType> items;
     private void Start()
     {
+        manager = FindObjectOfType<DialogueManager>();
         ResetInvertory();
-
+        StartCoroutine(Wait(2));
     }
 
     public void ResetInvertory()
@@ -22,6 +25,7 @@ public class GameStateManager : MonoBehaviour
         {
             InventoryManager.Instance.InstantiateItemInSlot(itemType);
         }
+        manager.CheckGlobalVariableStatus();
     }
 
     public void DestroyAllObjects()
@@ -50,11 +54,8 @@ public class GameStateManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            ResetInvertory();
-            DestroyAllObjects();
-        }
+
+
     }
 
     public void AddItemToList(ItemType type)
@@ -65,5 +66,13 @@ public class GameStateManager : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
-
+    private IEnumerator Wait(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        manager = FindObjectOfType<DialogueManager>();
+        ResetInvertory();
+        DestroyAllObjects();
+        DestroyAllConvos();
+        StartCoroutine(Wait(waitTime));
+    }
 }
