@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void EnterStory(TextAsset inkJson)
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         ConvoCanvas.SetActive(true);
         story = new Story(inkJson.text);
         variables.VariablesToStory(story); // Load global variables into the current story
