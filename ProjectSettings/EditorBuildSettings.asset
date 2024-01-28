@@ -9,9 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: a0ed26f0d578cb3498b3512d99b05d7b
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 73404581a7aa7624f9804482514d115c
+  - enabled: 1
     path: Assets/Scenes/Devroom.unity
     guid: 3ee812b0cc034c14d9c1af6b22abe4e8
   - enabled: 1
+    path: Assets/Scenes/Korytarz.unity
+    guid: 359e278ec4eb189479f546d97f426e62
+  - enabled: 1
     path: Assets/Scenes/Toaleta_i_Sekretariat.unity
     guid: 76fe4c7e62cfebe4c9240b5fcccab972
+  - enabled: 1
+    path: Assets/Scenes/Kuchnia.unity
+    guid: c69bef9db3ee6af4287f7b79651fa89f
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: bd85eccb1a70c56408606fe13108e8d7
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 69bb6e6328f74d949922e60f49bee797
+  - enabled: 1
+    path: Assets/Scenes/Loose.unity
+    guid: 5165b68fc37150046a9dfe4b3bd32ee4
   m_configObjects: {}
