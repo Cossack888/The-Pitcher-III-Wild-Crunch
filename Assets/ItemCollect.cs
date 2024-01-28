@@ -44,6 +44,7 @@ public class ItemCollect : MonoBehaviour
                 manager.AddItemToList(type);
                 this.enabled = false;
                 InventoryManager.Instance.InstantiateItemInSlot(type);
+                Destroy(gameObject);
             }
 
         }

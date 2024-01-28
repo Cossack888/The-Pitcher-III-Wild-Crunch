@@ -23,11 +23,37 @@ public class GameStateManager : MonoBehaviour
             InventoryManager.Instance.InstantiateItemInSlot(itemType);
         }
     }
+
+    public void DestroyAllObjects()
+    {
+        foreach (var item in GameObject.FindObjectsOfType<ItemCollect>())
+        {
+            if (items.Contains(item.type))
+            {
+                Destroy(item.gameObject);
+            }
+        }
+    }
+
+    public void DestroyAllConvos()
+    {
+        foreach (var item in GameObject.FindObjectsOfType<ConvoTrigger>())
+        {
+            if (items.Contains(item.itemType))
+            {
+                item.enabled = false;
+            }
+        }
+    }
+
+
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Y))
         {
             ResetInvertory();
+            DestroyAllObjects();
         }
     }
 

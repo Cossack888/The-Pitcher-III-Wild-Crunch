@@ -1217,8 +1217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd5f5e58d445478ff5ddd11dba9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
   id: 1
+  itemType: {fileID: 0}
 --- !u!212 &347166183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3303,8 +3303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd5f5e58d445478ff5ddd11dba9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
   id: 1
+  itemType: {fileID: 0}
 --- !u!58 &1406730445
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4346,8 +4346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd5f5e58d445478ff5ddd11dba9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
   id: 0
+  itemType: {fileID: 0}
 --- !u!58 &1696956434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5061,6 +5061,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5766303036189203351, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
+      propertyPath: itemType
+      value: 
+      objectReference: {fileID: 11400000, guid: d7b17aee761450242ae9dc20c18fe465, type: 2}
     - target: {fileID: 7806921166815359130, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
       propertyPath: m_Name
       value: IMG_2745

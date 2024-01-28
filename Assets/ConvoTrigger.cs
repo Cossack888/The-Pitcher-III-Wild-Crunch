@@ -5,9 +5,10 @@ using UnityEngine;
 public class ConvoTrigger : MonoBehaviour
 {
     Outline outline;
-    [SerializeField] DialogueManager manager;
+    DialogueManager manager;
     bool inRange;
     [SerializeField] int id;
+    public ItemType itemType;
     private void Start()
     {
         outline = GetComponent<Outline>();
@@ -27,8 +28,6 @@ public class ConvoTrigger : MonoBehaviour
     {
         if (inRange)
         {
-
-
             if (Input.GetMouseButtonDown(0))
             {
                 manager.EnterStory(manager.dialogueContainers[id].dialog);

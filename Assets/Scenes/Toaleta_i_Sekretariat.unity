@@ -3248,6 +3248,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ui manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2206252787415251218, guid: bf95a519a10cac44ba3bf53b1274fa59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655212593077573834, guid: bf95a519a10cac44ba3bf53b1274fa59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242312528052824037, guid: bf95a519a10cac44ba3bf53b1274fa59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6356531157520216383, guid: bf95a519a10cac44ba3bf53b1274fa59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
