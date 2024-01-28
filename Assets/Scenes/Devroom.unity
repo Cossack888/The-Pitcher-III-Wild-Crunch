@@ -1219,6 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   itemType: {fileID: 0}
+  itemType1: {fileID: 0}
 --- !u!212 &347166183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3305,6 +3306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   itemType: {fileID: 0}
+  itemType1: {fileID: 0}
 --- !u!58 &1406730445
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4348,6 +4350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   itemType: {fileID: 0}
+  itemType1: {fileID: 0}
 --- !u!58 &1696956434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5136,7 +5139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439813672783424363, guid: 6dfdd56ce6f493a4ea7b3ae03c7e8a46, type: 3}
       propertyPath: sceneBuildIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7753086651587449307, guid: 6dfdd56ce6f493a4ea7b3ae03c7e8a46, type: 3}
       propertyPath: outlineWidth
