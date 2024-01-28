@@ -470,6 +470,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: 3fe7fe30bfc7b7f45aea65f90b762d5a, type: 3}
     - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 76df4130c86d57d4ea098888902e18d0, type: 2}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: e3247ba8c3ef5224ebbee223a3c80de1, type: 2}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: e3e4d2c1c2a027d44952e6bce3cac5b2, type: 2}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3abe685898ddf9d4ab8438da6b2eac69, type: 2}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
+      propertyPath: itemType.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3abe685898ddf9d4ab8438da6b2eac69, type: 2}
+    - target: {fileID: 6160471394267278285, guid: c89a5bc8d89b3b04c8737c3aa2eb8cfc, type: 3}
       propertyPath: dialogueContainers.Array.size
       value: 5
       objectReference: {fileID: 0}

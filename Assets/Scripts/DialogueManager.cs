@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 
 public class DialogueManager : MonoBehaviour
@@ -25,13 +26,9 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
-
     public Dictionary<string, TextAsset> dialogueChanger = new Dictionary<string, TextAsset>();
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +41,6 @@ player = GameObject.FindGameObjectWithTag("Player").transform;
             variables = new DialogueVariables(loadGlobalsJson);
         }
         // variables.StartListening(story);
-
-
     }
 
     private void Update()
@@ -64,8 +59,6 @@ player = GameObject.FindGameObjectWithTag("Player").transform;
             CheckGlobalVariableStatus();
         }
     }
-
-
     public void EnterStory(TextAsset inkJson)
     {
         ConvoCanvas.SetActive(true);
@@ -90,18 +83,25 @@ player = GameObject.FindGameObjectWithTag("Player").transform;
     {
         foreach (var variable in variables.variables)
         {
+
+
             Debug.Log($"Global Variable: {variable.Key}, Value: {variable.Value}");
 
             foreach (ItemType item in itemType)
             {
-                if (variable.Key == item.itemName && variable.Value == true)
+                if (variable.Key == item.itemName && variable.Value.ToString().ToLower() == "true")
                 {
                     InventoryManager.Instance.InstantiateItemInSlot(item);
+
                 }
             }
-
         }
     }
+
+
+
+
+
 
     void refreshUI()
     {

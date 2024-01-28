@@ -12,11 +12,14 @@ public class InventoryManager : MonoBehaviour
     public Transform inventoryLayout;
     public Transform inventoryLayout1;
     public Transform inventoryLayout2;
+    public Transform inventoryLayout3;
     public Sprite sprite;
     public string nameOfItem;
     public List<InventoryItem> slots;
     public ItemType[] itemTypes;
     public int type = 0;
+    public int invGroup;
+    public GameObject[] invGroups;
 
     private void Awake()
     {
@@ -27,6 +30,33 @@ public class InventoryManager : MonoBehaviour
         }
         Instance = this;
     }
+
+
+    public void nextInvGroup()
+    {
+        if (invGroup < invGroups.Length)
+        {
+            invGroup++;
+            foreach (GameObject inv in invGroups)
+            {
+                inv.SetActive(false);
+            }
+            invGroups[invGroup].SetActive(true);
+        }
+    }
+    public void previousInvGroup()
+    {
+        if (invGroup > 0)
+        {
+            invGroup--;
+            foreach (GameObject inv in invGroups)
+            {
+                inv.SetActive(false);
+            }
+            invGroups[invGroup].SetActive(true);
+        }
+    }
+
     public void InstantiateItemInSlot(ItemType item)
     {
 
@@ -36,7 +66,7 @@ public class InventoryManager : MonoBehaviour
         GameObject newSlot = Instantiate(inventorySlotPrefab, Vector3.zero, Quaternion.identity);
 
         // Optionally, you can set the instantiated slot as a child of a specific parent in your inventory layout
-        if (slots.Count > 0 && slots.Count < 14)
+        if (slots.Count >= 0 && slots.Count < 14)
         {
             newSlot.transform.SetParent(inventoryLayout, false);
         }
@@ -44,9 +74,13 @@ public class InventoryManager : MonoBehaviour
         {
             newSlot.transform.SetParent(inventoryLayout1, false);
         }
-        if (slots.Count >= 31)
+        if (slots.Count >= 31 && slots.Count < 45)
         {
             newSlot.transform.SetParent(inventoryLayout2, false);
+        }
+        if (slots.Count >= 46)
+        {
+            newSlot.transform.SetParent(inventoryLayout3, false);
         }
 
         // Instantiate a new InventoryItem
@@ -71,8 +105,12 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            type++;
-            InstantiateItemInSlot(itemTypes[type]);
+            if (type < itemTypes.Length - 1)
+            {
+                type++;
+                InstantiateItemInSlot(itemTypes[type]);
+            }
+
         }
     }
 
