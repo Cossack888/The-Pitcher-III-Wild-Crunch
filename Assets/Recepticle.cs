@@ -30,12 +30,18 @@ public class Recepticle : MonoBehaviour, IDropHandler
             if (slotID == draggedItem.type.SlotId)
             {
                 bossManager.ChangeMeter(5);
+                bossManager.PlayClip(bossManager.clipPerfect);
             }
             else if (item.typeofItem == draggedItem.type.typeofItem)
             {
                 bossManager.ChangeMeter(2);
+                bossManager.PlayClip(bossManager.clipHappy);
             }
 
+        }
+        else
+        {
+            bossManager.PlayClip(bossManager.clipnormal);
         }
 
     }
