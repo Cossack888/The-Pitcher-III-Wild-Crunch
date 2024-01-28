@@ -65,10 +65,10 @@ public class BossManager : MonoBehaviour
         }
         else
         {
-            if (laughterMeter >= 100) { SceneManager.LoadScene(7); }
+            if (laughterMeter >= 100) { SceneManager.LoadScene(8); }
             else
             {
-                SceneManager.LoadScene(8);
+                SceneManager.LoadScene(9);
             }
         }
 
