@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8ccba710b552d40a1a66fbbba820d9, type: 3}
   m_Name: Kon
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 67565235a931aa041b50deae751fff93, type: 3}
+  sprite: {fileID: 21300000, guid: 5ffb6aab6f00fa949b1574bd3674b51d, type: 3}
   itemName: Kon
   SlotId: 0
   typeofItem: 0
