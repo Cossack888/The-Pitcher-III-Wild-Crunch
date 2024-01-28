@@ -9,6 +9,7 @@ public class ConvoTrigger : MonoBehaviour
     bool inRange;
     [SerializeField] int id;
     public ItemType itemType;
+    public ItemType itemType1;
     private void Start()
     {
         outline = GetComponent<Outline>();

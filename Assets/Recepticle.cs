@@ -31,10 +31,11 @@ public class Recepticle : MonoBehaviour, IDropHandler
             {
                 bossManager.ChangeMeter(5);
             }
-            else if (item = draggedItem.type)
+            else if (item.typeofItem == draggedItem.type.typeofItem)
             {
                 bossManager.ChangeMeter(2);
             }
+
         }
 
     }

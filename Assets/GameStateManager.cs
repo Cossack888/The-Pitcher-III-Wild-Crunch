@@ -39,7 +39,7 @@ public class GameStateManager : MonoBehaviour
     {
         foreach (var item in GameObject.FindObjectsOfType<ConvoTrigger>())
         {
-            if (items.Contains(item.itemType))
+            if (items.Contains(item.itemType) || items.Contains(item.itemType1))
             {
                 item.enabled = false;
             }
