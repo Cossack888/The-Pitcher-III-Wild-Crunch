@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] public TextAsset loadGlobalsJson;
     public ItemType[] itemType;
     public string CurrentText;
-
+    List<ItemType> itemTypes;
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         {
             variables = new DialogueVariables(loadGlobalsJson);
         }
+        itemTypes = new List<ItemType>();
         // variables.StartListening(story);
     }
 
@@ -84,7 +85,12 @@ public class DialogueManager : MonoBehaviour
             {
                 if (variable.Key == item.itemName && variable.Value.ToString().ToLower() == "true")
                 {
-                    InventoryManager.Instance.InstantiateItemInSlot(item);
+                    if (!itemTypes.Contains(item))
+                    {
+                        InventoryManager.Instance.InstantiateItemInSlot(item);
+                        itemTypes.Add(item);
+                    }
+
 
                 }
             }

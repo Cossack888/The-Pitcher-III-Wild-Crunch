@@ -26,9 +26,10 @@ public class GameStateManager : MonoBehaviour
         {
             foreach (ItemType itemType in items)
             {
-                InventoryManager.Instance.InstantiateItemInSlot(itemType);
-                items.Remove(itemType);
+                if (!items.Contains(itemType))
+                    InventoryManager.Instance.InstantiateItemInSlot(itemType);
             }
+
             manager.CheckGlobalVariableStatus();
 
         }
