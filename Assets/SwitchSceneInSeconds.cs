@@ -9,7 +9,7 @@ public class SwitchSceneInSeconds : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Wait(5));
+        StartCoroutine(Wait(2));
     }
     public void ChangeScene()
     {

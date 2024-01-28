@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: dialog_JelendrzejDuchZKibla
   m_EditorClassIdentifier: 
   ID: 6
-  dialog: {fileID: 4900000, guid: 3863c6014702e674eb1ff78b8f9f8291, type: 3}
+  dialog: {fileID: 4900000, guid: e1048c109c9c84e869aea64520112f9b, type: 3}

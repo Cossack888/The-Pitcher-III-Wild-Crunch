@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: dialog_KocimierzWozny
   m_EditorClassIdentifier: 
   ID: 3
-  dialog: {fileID: 4900000, guid: 902744df15e51014c9b46e0760244e23, type: 3}
+  dialog: {fileID: 4900000, guid: 632b2945a423a4f43a4632863b1d6ff4, type: 3}

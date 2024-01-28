@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: dialog_BeeeataHRowna
   m_EditorClassIdentifier: 
   ID: 4
-  dialog: {fileID: 4900000, guid: f4f51d9e619721e4d8461bfb2c173038, type: 3}
+  dialog: {fileID: 4900000, guid: e380e480fa3c144efbc7e7f97bf422d4, type: 3}

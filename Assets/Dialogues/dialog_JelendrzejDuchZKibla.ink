@@ -1,7 +1,7 @@
 INCLUDE Globals.ink
 (Podchodzisz do muszli klozetowej i zerkasz w wodną toń, która odbija światło jarzeniówki. Myślisz o tym, że nie widziałeś nieba od... od wielu dni. No chyba że na skyboxie.)
 *[(Wciśnij guzik spłuczki)] --> SpluczkaNieDziala
-+{PalecUmarlaka} [(Zanurz palec umarlaka w klozecie i zaskowycz do lampy)] --> DuchSiePojawia
+*[(jeśli masz palec umarlaka: Zanurz palec umarlaka w klozecie i zaskowycz do lampy)] --> DuchSiePojawia
 
 ===SpluczkaNieDziala===
 (Spłuczka nie działa, ale przez chwilę masz wrażenie, że słyszysz odległy głos. To musiał być wiatr.)

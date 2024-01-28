@@ -1608,6 +1608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SamolotModel
       objectReference: {fileID: 0}
+    - target: {fileID: 8873478148993595707, guid: 92e3250b8ea32f045b44c062342dd637, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4594,7 +4598,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1914468028
 RectTransform:

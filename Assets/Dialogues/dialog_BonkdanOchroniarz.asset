@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: dialog_BonkdanOchroniarz
   m_EditorClassIdentifier: 
   ID: 5
-  dialog: {fileID: 4900000, guid: afec74ea5decd7b4db42d4ef8a0803ec, type: 3}
+  dialog: {fileID: 4900000, guid: 8c41d56ddcfb6472cbee8f42395733c6, type: 3}

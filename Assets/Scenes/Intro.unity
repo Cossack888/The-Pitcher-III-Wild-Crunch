@@ -1043,6 +1043,7 @@ GameObject:
   - component: {fileID: 1823917493}
   - component: {fileID: 1823917497}
   - component: {fileID: 1823917498}
+  - component: {fileID: 1823917499}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1111,7 +1112,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1823917496
 RectTransform:
@@ -1161,6 +1162,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneIndex: 3
+  Object: {fileID: 708797533}
+--- !u!114 &1823917499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823917492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1795e978a5c21499e4e4bc5184ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneIndex: 7
+  SceneIndex1: 8
+  SceneIndex2: 9
   Object: {fileID: 708797533}
 --- !u!1 &41703189440178937
 GameObject:
@@ -1769,6 +1786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8471632111580568584}
   - component: {fileID: 989135625}
+  - component: {fileID: 8471632111580568585}
   m_Layer: 0
   m_Name: ui manager
   m_TagString: Untagged
@@ -2207,6 +2225,22 @@ Transform:
   - {fileID: 4097110927591969251}
   m_Father: {fileID: 6151158146359856482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8471632111580568585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796003933894217276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1795e978a5c21499e4e4bc5184ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneIndex: 8
+  SceneIndex1: 8
+  SceneIndex2: 9
+  Object: {fileID: 7127790355408053085}
 --- !u!1 &8618629351119697464
 GameObject:
   m_ObjectHideFlags: 0
