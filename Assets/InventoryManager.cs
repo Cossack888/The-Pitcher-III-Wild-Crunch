@@ -29,6 +29,8 @@ public class InventoryManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(this.gameObject);
+
     }
 
 

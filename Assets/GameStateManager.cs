@@ -10,6 +10,7 @@ public class GameStateManager : MonoBehaviour
     public List<ItemType> items;
     private void Start()
     {
+        items = new List<ItemType>();
         manager = FindObjectOfType<DialogueManager>();
         ResetInvertory();
         StartCoroutine(Wait(2));
@@ -21,12 +22,17 @@ public class GameStateManager : MonoBehaviour
          {
              Destroy(item.gameObject);
          }*/
-        foreach (ItemType itemType in items)
+        if (items.Count > 0)
         {
-            InventoryManager.Instance.InstantiateItemInSlot(itemType);
-            items.Remove(itemType);
+            foreach (ItemType itemType in items)
+            {
+                InventoryManager.Instance.InstantiateItemInSlot(itemType);
+                items.Remove(itemType);
+            }
+            manager.CheckGlobalVariableStatus();
+
         }
-        manager.CheckGlobalVariableStatus();
+
     }
 
     public void DestroyAllObjects()
@@ -49,14 +55,6 @@ public class GameStateManager : MonoBehaviour
                 item.enabled = false;
             }
         }
-    }
-
-
-
-    private void Update()
-    {
-
-
     }
 
     public void AddItemToList(ItemType type)
