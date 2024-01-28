@@ -14,7 +14,7 @@ public class BossManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Wait(2));
+        // StartCoroutine(Wait(2));
     }
 
     // Update is called once per frame

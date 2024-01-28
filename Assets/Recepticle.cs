@@ -23,10 +23,11 @@ public class Recepticle : MonoBehaviour, IDropHandler
 
             // Optionally, you can add logic here to check if the drop is valid
             // For example, check if the slot already contains an item, or implement stacking rules.
-            Debug.Log(draggedItem.name);
+            //Debug.Log(draggedItem.name);
             // Set the parent of the dragged item to this slot
             draggedItem.transform.SetParent(transform, false);
             draggedItem.transform.position = transform.position;
+
             if (slotID == draggedItem.type.SlotId)
             {
                 bossManager.ChangeMeter(5);
@@ -37,7 +38,7 @@ public class Recepticle : MonoBehaviour, IDropHandler
                 bossManager.ChangeMeter(2);
                 bossManager.PlayClip(bossManager.clipHappy);
             }
-
+            draggedItem.enabled = false;
         }
         else
         {
