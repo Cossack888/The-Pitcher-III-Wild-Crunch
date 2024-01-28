@@ -14,6 +14,9 @@ public class ItemCollect : MonoBehaviour
     {
         manager = GameObject.FindObjectOfType<GameStateManager>();
         outline = GetComponent<Outline>();
+
+
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
