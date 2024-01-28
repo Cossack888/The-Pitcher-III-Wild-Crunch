@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: bonkdan_Data
+  m_EditorClassIdentifier: 
+  dataName: bonkdan
+  dragonBonesJSON: {fileID: 4900000, guid: ba302902b567ce84aba06e19910d0698, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: bfa5fa6addce3a4429a0f4ef346c9aed, type: 3}
+    texture: {fileID: 2800000, guid: b9ede2c3b5f32834ba27ffb40db59c18, type: 3}
+    material: {fileID: 2100000, guid: 4151946a45dcad34c92e1879c958835f, type: 2}
+    uiMaterial: {fileID: 0}

@@ -18,14 +18,14 @@ public class ConvoTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         inRange = true;
-        GetComponent<SpriteRenderer>().color = Color.green;
-        outline.OutlineColor = Color.green;
+        //GetComponent<SpriteRenderer>().color = Color.green;
+        //outline.OutlineColor = Color.green;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         inRange = false;
-        outline.OutlineColor = Color.white;
-        GetComponent<SpriteRenderer>().color = Color.white;
+        //outline.OutlineColor = Color.white;
+        // GetComponent<SpriteRenderer>().color = Color.white;
     }
     private void Update()
     {

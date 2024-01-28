@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: beata_Data
+  m_EditorClassIdentifier: 
+  dataName: beata
+  dragonBonesJSON: {fileID: 4900000, guid: 0b8949f9da423d34690c43f42c329bba, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 666a973ce5708944e9e216d028d4fedb, type: 3}
+    texture: {fileID: 2800000, guid: ab160dae79a440145a379c427718528d, type: 3}
+    material: {fileID: 2100000, guid: 95035612397218d4fb3e7bb51b6fe3b3, type: 2}
+    uiMaterial: {fileID: 0}
