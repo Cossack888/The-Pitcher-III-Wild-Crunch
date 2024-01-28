@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8ccba710b552d40a1a66fbbba820d9, type: 3}
   m_Name: Panda
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 67565235a931aa041b50deae751fff93, type: 3}
+  sprite: {fileID: 21300000, guid: 3ab49708b4b225d439c0b78b008ca5e1, type: 3}
   itemName: Panda
   SlotId: 0
   typeofItem: 0
