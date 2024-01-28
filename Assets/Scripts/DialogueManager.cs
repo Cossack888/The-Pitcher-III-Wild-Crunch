@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         refreshUI();
         variables.StartListening(story);
         if (player != null)
-            player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
     public void ExitStory()
     {
