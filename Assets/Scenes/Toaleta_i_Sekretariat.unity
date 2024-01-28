@@ -4054,7 +4054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439813672783424363, guid: 6dfdd56ce6f493a4ea7b3ae03c7e8a46, type: 3}
       propertyPath: sceneBuildIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7753086651587449307, guid: 6dfdd56ce6f493a4ea7b3ae03c7e8a46, type: 3}
       propertyPath: outlineWidth
