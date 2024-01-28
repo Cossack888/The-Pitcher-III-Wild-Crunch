@@ -33,6 +33,7 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 SceneManager.LoadScene(7);
+                this.enabled = false;
             }
         }
     }

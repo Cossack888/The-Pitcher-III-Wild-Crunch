@@ -14,7 +14,7 @@ public class DectivateObject : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == SceneIndex || SceneManager.GetActiveScene().buildIndex == SceneIndex1 || SceneManager.GetActiveScene().buildIndex == SceneIndex2)
         {
-            Object.SetActive(false);
+            Destroy(Object);
         }
     }
 }

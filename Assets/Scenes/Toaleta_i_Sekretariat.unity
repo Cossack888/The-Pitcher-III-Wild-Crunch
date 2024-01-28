@@ -204,7 +204,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &25967640
 GameObject:
@@ -370,7 +370,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &34866793
 GameObject:
@@ -453,7 +453,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &69491439
 GameObject:
@@ -927,9 +927,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200143075}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.56475955, w: 0.8252556}
-  m_LocalPosition: {x: -1.910645, y: -0.49343252, z: -0.003}
-  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.000000011980772, w: 1}
+  m_LocalPosition: {x: -0.0000003691811, y: -0.000000025521516, z: -0.003}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896002635}
@@ -1400,7 +1400,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &415614274
 GameObject:
@@ -3343,7 +3343,7 @@ MonoBehaviour:
   _timeScale: 1
   _sortingMode: 0
   _sortingLayerName: Default
-  _sortingOrder: 10
+  _sortingOrder: 11
   _zSpace: 0
   _flipX: 0
   _flipY: 0
@@ -4389,7 +4389,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1220370982
 GameObject:
@@ -5045,9 +5045,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506034560}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.18168132, w: 0.9833575}
-  m_LocalPosition: {x: 0.28582725, y: -0.76205695, z: -0.0050000004}
-  m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0000000876279, w: 1}
+  m_LocalPosition: {x: -0.000001033691, y: 0.0000011926488, z: -0.0050000004}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896002635}
@@ -5478,7 +5478,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1750845153
 GameObject:
@@ -5711,9 +5711,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865002283}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.56475914, w: 0.8252558}
-  m_LocalPosition: {x: -1.9106455, y: -0.49343258, z: -0.002}
-  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00000046198673, w: 1}
+  m_LocalPosition: {x: -0.00000039038895, y: -0.0000004735172, z: -0.002}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1896002635}
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 1896002634}
   - component: {fileID: 1896002636}
   m_Layer: 0
-  m_Name: New Armature Object
+  m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5883,7 +5883,7 @@ MonoBehaviour:
   armatureName: Armature
   isUGUI: 0
   debugDraw: 0
-  animationName: animtion0
+  animationName: 
   _playTimes: 0
   _timeScale: 1
   _sortingMode: 0
@@ -5926,7 +5926,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dfe11beb597d1a40a892f995bd31b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotNames: []
+  slotNames:
+  - Body1
+  - Body2
+  - Body3
+  - Body4
+  - Legs
+  - Head1
+  - Head2
+  - Head3
+  - Head4
+  - Dziob
   dirty: 0
 --- !u!1 &1958664101
 GameObject:
@@ -6346,7 +6356,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &2103418409
 PrefabInstance:
