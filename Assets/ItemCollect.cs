@@ -24,6 +24,7 @@ public class ItemCollect : MonoBehaviour
         {
             inRange = true;
             outline.OutlineColor = Color.green;
+            GetComponent<SpriteRenderer>().color = Color.green;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -32,6 +33,7 @@ public class ItemCollect : MonoBehaviour
         {
             inRange = false;
             outline.OutlineColor = Color.white;
+            GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 
