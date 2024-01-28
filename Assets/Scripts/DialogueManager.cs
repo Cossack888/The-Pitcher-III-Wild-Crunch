@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-
+player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
 
@@ -44,6 +44,7 @@ public class DialogueManager : MonoBehaviour
             variables = new DialogueVariables(loadGlobalsJson);
         }
         // variables.StartListening(story);
+
 
     }
 

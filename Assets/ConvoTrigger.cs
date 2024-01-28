@@ -11,6 +11,7 @@ public class ConvoTrigger : MonoBehaviour
     private void Start()
     {
         outline = GetComponent<Outline>();
+        manager = GameObject.FindObjectOfType<DialogueManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
