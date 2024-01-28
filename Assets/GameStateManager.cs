@@ -17,13 +17,14 @@ public class GameStateManager : MonoBehaviour
 
     public void ResetInvertory()
     {
-        foreach (var item in GameObject.FindGameObjectsWithTag("Slot"))
-        {
-            Destroy(item.gameObject);
-        }
+        /* foreach (var item in GameObject.FindGameObjectsWithTag("Slot"))
+         {
+             Destroy(item.gameObject);
+         }*/
         foreach (ItemType itemType in items)
         {
             InventoryManager.Instance.InstantiateItemInSlot(itemType);
+            items.Remove(itemType);
         }
         manager.CheckGlobalVariableStatus();
     }

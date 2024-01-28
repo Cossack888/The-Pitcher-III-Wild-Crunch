@@ -78,9 +78,7 @@ public class DialogueManager : MonoBehaviour
     {
         foreach (var variable in variables.variables)
         {
-
-
-            Debug.Log($"Global Variable: {variable.Key}, Value: {variable.Value}");
+            //Debug.Log($"Global Variable: {variable.Key}, Value: {variable.Value}");
 
             foreach (ItemType item in itemType)
             {
