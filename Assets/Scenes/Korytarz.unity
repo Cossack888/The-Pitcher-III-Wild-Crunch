@@ -4781,13 +4781,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766303036189203351, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
+      propertyPath: id
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766303036189203351, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5766303036189203351, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
       propertyPath: itemType
       value: 
-      objectReference: {fileID: 11400000, guid: d7b17aee761450242ae9dc20c18fe465, type: 2}
+      objectReference: {fileID: 11400000, guid: fda5a8e5d35c4a2458b488d423e0cd84, type: 2}
+    - target: {fileID: 5766303036189203351, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
+      propertyPath: itemType1
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b294acbb8e9857488eb0aa44a1da01d, type: 2}
     - target: {fileID: 7806921166815359130, guid: e0b4ce67903c0b340b3df325888ef940, type: 3}
       propertyPath: m_Name
       value: IMG_2745
